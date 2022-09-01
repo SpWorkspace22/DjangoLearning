@@ -1,0 +1,31 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content %}
+            <!-- Banner Content Start -->
+            <div class="banner-section">
+                <div class="container">
+                    <div class="row justify-content-center align-item=center">
+                        <div class="col-lg-6">
+                            <h1 class="banner-title">
+                                Hi, I'm Sonu Prasad.
+                            </h1>
+                            <p class="banner-description">
+                              Experienced Software Engineer with a demonstrated history of working in the information technology and 
+                              services industry. 
+                            </p>
+                            <p class="banner-description pb-3">    
+                              Skilled in Core Java, Python (Programming Language), SQL, and RDBMS. Strong engineering professional with a 
+                              Bca focused in Computer Programming from Mucc.                        
+                            </p>
+                            <a href="{% url 'about' %}" class="banner-btn">read more &rarr;</a>
+                        </div>
+                        <div class="col-lg-6 col-md-8">
+                            <img class="img-fluid rounded" src="{% static 'images/profile.png' %}" alt="profile">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Banner Content End -->
+        </div>
+        <!-- Main End -->
+{% endblock content %}

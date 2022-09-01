@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %} 
+            <!-- portfolio start -->
+            <div class="portfolio-section">
+              <!-- Halloween Website -->
+            {% for project in project_list %}
+              <div class="container">
+                <div class="row justify-content-center align-items-center pb-5">
+                  <div class="col">
+                    <div class="card">
+                      <div class="card-body">
+                        <h1 class="port-title display-6 pt-0">{{ project.title }}</h1>
+                        <p class="port-role text-dark"><span class="badge bg-dark">💼role </span> </p>
+                        <p class="port-job text-dark">
+                          <span class="badge bg-danger">{{ project.role }}</span> 
+                          <span class="badge bg-success rounded-pill">{{ project.start_date }}</span>
+                          <span class="badge bg-success rounded-pill">{{ project.end_date }}</span>
+                        </p>
+                        <p class="port-desc"> {{ project.description}} </p>
+                        <p>
+                          <a href="{{ project.project_link }}" >
+                          <span class="badge rounded-pill bg-dark"><i class='bx bxl-github'></i> 
+                            See More 
+                          </span>
+                        </a></p>
+                      </div>
+                   </div>
+                  </div>
+                </div>
+              </div>
+            {% endfor %}
+            <!-- portfolio end -->
+          </div>
+        <!-- Main End -->
+{% endblock content %} 
