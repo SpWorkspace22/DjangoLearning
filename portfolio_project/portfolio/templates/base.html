@@ -19,44 +19,44 @@
     <body>
         <!-- Main Start -->
         <div class="main-wrapper">
-            <!--Header Start -->
-            <div class="header">
-                <!--Navbar Start -->
-                <nav class="navbar navbar-expand-lg navbar-light">
-                    <div class="container">
-                      <a class="navbar-brand" href="{% url 'index' %}">
-                        <img src="{% static 'images/logo.png' %}" width="50" alt="logo">
-                      </a>
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mt-2 mb-lg-0">
-                          <li class="nav-item">
-                            <a class="nav-link" href="{% url 'index' %}">Home</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="{% url 'about' %}">About</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="{% url 'portfolio' %}">Portfolio</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="{% url 'contact' %}">Contact</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </nav>
-                <!--Navbar End --> 
-                <hr />
-            </div>
-            <!--Header End -->
+          <div class="header" >
+          <!--Navbar Start -->
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <div class="container">
+                <a class="navbar-brand" href="{% url 'index' %}">
+                  <img src="{% static 'images/logo.png' %}" width="50" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ms-auto mt-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" href="{% url 'index' %}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="{% url 'about' %}">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="{% url 'portfolio' %}">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          <!--Navbar End -->
+          <hr />
+          <!--Header End -->
+          </div>
+        </div>
             {% block content %}
             {% endblock content %}
         <!-- Footer Start-->
         <div class="footer">
-            <di class="container">
+            <div class="container">
                 <div class="social-media text-center">
                     <ul class="footer-list">
                         <li><a href="mailto:email-to@gmail.com"><i class='bx bxl-gmail' ></i></a></li>
@@ -64,9 +64,10 @@
                         <li><a href="https://github.com/SpWorkspace22"><i class='bx bxl-github'></i></a></li>
                     </ul>
                 </div>
-            </di>
+            </div>
         </div>
         <!-- Footer End -->
+        
         <!--Bootstrap JS File -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>

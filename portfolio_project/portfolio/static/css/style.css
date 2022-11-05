@@ -28,8 +28,12 @@ a:hover {
 
 }
 /* Navbar */
-.navbar {
-    position: relative;
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: white;
 }
 
 .navbar-collapse {
