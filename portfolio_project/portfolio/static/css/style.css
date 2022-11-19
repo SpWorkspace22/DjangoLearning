@@ -36,6 +36,10 @@ a:hover {
     background-color: white;
 }
 
+.header:hover {
+    box-shadow: 5px 5px 20px rgba(33,33,33,.2);    
+}
+
 .navbar-collapse {
     text-align: center;
 }
@@ -122,6 +126,21 @@ a:hover {
     font-weight: 500;
 }
 
+
+.skill-heading {
+    width: 100%;
+    height: 100px;
+    padding-top: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+.skill-bar:hover {
+    box-shadow: 5px 5px 20px rgba(33,33,33,.2); 
+}
 /* portfolio  */
 
 .portfolio-section {
@@ -161,6 +180,7 @@ a:hover {
     border: 1px solid #ccc;
     box-shadow: 0 0 11px rgba(33,33,33,.2); 
 }
+
 /* contact */
 .contact-section {
     position: relative;
